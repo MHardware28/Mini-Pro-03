@@ -1,9 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
-  const [items, setItems] = useState([]);
+  // Load from localStorage ONCE when app starts
+  const [items, setItems] = useState(() => {
+    const saved = localStorage.getItem("cart");
+    return saved ? JSON.parse(saved) : [];
+  });
+
   const [input, setInput] = useState("");
+
+  // Save to localStorage whenever items changes
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(items));
+  }, [items]);
 
   // Add new item
   function addItem() {
@@ -121,4 +131,5 @@ function App() {
 }
 
 export default App;
+
 

@@ -1,16 +1,59 @@
-# React + Vite
+# Grocery List App - https://mini-pro-03.vercel.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React grocery list application that allows users to add items, adjust quantities, and remove items from the list. Users can add grocery items, adjust quantities, and remove items dynamically using React state management.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Component-based architecture in React
 
-## React Compiler
+- State management using `useState`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Rendering dynamic lists using `.map()`
 
-## Expanding the ESLint configuration
+- Removing items using `.filter()`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Updating existing items (increment & decrement functionality)
+
+The app updates instantly without reloading the page, showcasing how React handles UI reactivity.
+
+## Features
+
+- Add new grocery items
+
+- Increase or decrease item quantity using + and −
+
+- Remove items with a small × button
+
+- Clean and simple user interface
+
+- Built with React and Vite
+
+## Concepts Used
+
+- React Functional Components
+
+- `useState` Hook
+
+- Array Methods:
+
+    - 1. `map()` – display list items
+
+    - 2. `filter()` – remove items
+
+- Event handling in React
+
+- Conditional logic
+
+- Basic CSS styling
+
+## Built With
+
+- React
+
+- Vite
+
+- JavaScript
+
+- CSS
+  
+Done By : Makayla Hardware
